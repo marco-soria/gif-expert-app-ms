@@ -22,6 +22,7 @@ describe('getGifs', () => {
     }));
 
     const gifs = await getGifs('Satoru');
+    //console.log(gifs)
     expect(gifs.length).toBeGreaterThan(0);
     expect(gifs[0]).toEqual({
       id: '1',

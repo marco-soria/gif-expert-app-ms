@@ -9,6 +9,8 @@ export const getGifs = async (category) => {
     const response = await fetch(url);
     const { data = [] } = await response.json();
 
+    //console.log('API response data:', data);
+
     const gifs = data.map(img => ({
          
             id: img.id,
@@ -16,6 +18,9 @@ export const getGifs = async (category) => {
             url: img.images?.downsized_medium.url
         
     }))
+
+    //console.log('Mapped gifs:', gifs);
+
     // console.log(gifs);
     return gifs;
 }

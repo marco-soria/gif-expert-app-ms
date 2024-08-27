@@ -1,6 +1,5 @@
 //import '@testing-library/jest-dom/extend-expect';
 import 'whatwg-fetch';
-import { getEnvironments } from './src/helpers/getEnvironments';
 import fetchMock from 'jest-fetch-mock';
 
 fetchMock.enableMocks();
