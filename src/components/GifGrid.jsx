@@ -1,4 +1,4 @@
-import { GiftItem } from "./GifItem";
+import { GifItem } from "./GifItem";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 
 
@@ -18,7 +18,7 @@ export const GifGrid = ({ category }) => {
           {
             images.map((image) => (
               
-                <GiftItem key={image.id}
+                <GifItem key={image.id}
                 {...image}
                 />
           ))

@@ -1,6 +1,6 @@
-import React from 'react'
+import Proptypes from 'prop-types';
 
-export const GiftItem = ({title,url,id}) => {
+export const GifItem = ({title,url,id}) => {
   return (
     <div className='card'>
         <img src={url} alt={title} />
@@ -8,4 +8,10 @@ export const GiftItem = ({title,url,id}) => {
 
     </div>
   )
+}
+
+GifItem.propTypes = {
+  title: Proptypes.string.isRequired,
+  url: Proptypes.string.isRequired,
+  
 }
